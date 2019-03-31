@@ -1,0 +1,112 @@
+@main-color: #E01A1A;
+@white-color: #FFF;
+.seller-info {
+    img {
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+    }
+}
+.breadcrumb {
+    background-color: @white-color;
+    padding: .75rem 0;
+    .breadcrumb-item, .breadcrumb-item a {
+        font-size: .62rem;
+    }
+}
+.title {
+    padding: .75rem 0;
+}
+.item-img {
+    width: 98%;
+}
+.btn {
+    width: 100%;
+    font-size: .8em;
+    margin: .3em 0;
+    text-align: left;
+    svg {
+        margin-right: 1rem;
+    }
+}
+.btn-secondary {
+    background: @main-color;
+    border: 1px solid @main-color;
+}
+.ghost-btn {
+    background: none;
+    color: @main-color;
+    border: 1px solid @main-color;
+    &:hover {
+        background: @main-color;
+        border: 1px solid @main-color;
+        color: @white-color;
+    }
+}
+.icon-btn {
+    color: grey;
+    float: left;
+    &.right { float: right;}
+    span {
+        padding: 0 .5rem;
+        font-size: .9em;
+    }
+}
+.desc {
+    padding: .2rem 0;
+}
+.price-box{
+    margin: .7rem 0;
+    &>h4 {
+        color: @main-color;
+    }
+}
+.item-stuffs {
+    margin: .5rem 0;
+    & > p {
+        color: #000;
+    }
+    & > p:first-child {
+        color: grey;
+    }
+
+}
+.seller-info {
+    .seller-name{
+        color: #000;
+    }
+}
+
+
+
+.fixed-bottom {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1030;
+}
+.contact-btns {
+    background: #FFF;
+}
+
+@media screen {
+    @media (max-width: 767.98px) {
+        .contact-btns {
+            .fixed-bottom()
+        }
+        .interested-in-ad {
+            display: none;
+        }
+    }
+    @media (max-width: 1300px) {
+        .seller-info > .profile {
+            padding-left: 3rem;
+        }
+    }
+    @media (min-width: 768px) and (max-width: 840px) {
+        .seller-info > .profile {
+            padding-left: 0;
+        }
+    }
+}
